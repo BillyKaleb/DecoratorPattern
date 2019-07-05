@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv_ice_cream_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Ice Cream"
+        android:textSize="20dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_ice_cream_choc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:layout_marginTop="50dp"
+        android:text="Choc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_ice_cream_vanilla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="Vanila"
+        app:layout_constraintRight_toLeftOf="@id/btn_ice_cream_choc"
+        app:layout_constraintTop_toTopOf="@id/btn_ice_cream_choc"/>
+
+    <Button
+        android:id="@+id/btn_ice_cream_tiramisu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="16dp"
+        android:text="Tiramisu"
+        app:layout_constraintLeft_toRightOf="@id/btn_ice_cream_choc"
+        app:layout_constraintTop_toTopOf="@id/btn_ice_cream_choc"/>
+
+    <TextView
+        android:id="@+id/tv_toppings_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:text="Toppings"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_ice_cream_choc"
+        app:layout_constraintRight_toRightOf="@id/btn_ice_cream_choc"
+        app:layout_constraintTop_toBottomOf="@id/btn_ice_cream_choc"/>
+
+    <Button
+        android:id="@+id/btn_toppings_chocochip"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Chip"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_ice_cream_vanilla"
+        app:layout_constraintRight_toRightOf="@id/btn_ice_cream_vanilla"
+        app:layout_constraintTop_toTopOf="@id/btn_toppings_gummy"/>
+
+    <Button
+        android:id="@+id/btn_toppings_gummy"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginVertical="16dp"
+        android:text="Gum"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_ice_cream_choc"
+        app:layout_constraintRight_toRightOf="@id/btn_ice_cream_choc"
+        app:layout_constraintTop_toBottomOf="@id/tv_toppings_title"/>
+
+    <Button
+        android:id="@+id/btn_toppings_jelly"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Jelly"
+        android:textAlignment="center"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="@id/btn_ice_cream_tiramisu"
+        app:layout_constraintRight_toRightOf="@id/btn_ice_cream_tiramisu"
+        app:layout_constraintTop_toTopOf="@id/btn_toppings_gummy"/>
+
+    <Button
+        android:id="@+id/btn_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Done"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.7"/>
+
+</android.support.constraint.ConstraintLayout>
